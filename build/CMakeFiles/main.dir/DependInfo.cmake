@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/C/SDL/src/ecs.c" "CMakeFiles/main.dir/src/ecs.c.obj" "gcc" "CMakeFiles/main.dir/src/ecs.c.obj.d"
+  "D:/C/SDL/src/engine.c" "CMakeFiles/main.dir/src/engine.c.obj" "gcc" "CMakeFiles/main.dir/src/engine.c.obj.d"
   "D:/C/SDL/src/main.c" "CMakeFiles/main.dir/src/main.c.obj" "gcc" "CMakeFiles/main.dir/src/main.c.obj.d"
   )
 

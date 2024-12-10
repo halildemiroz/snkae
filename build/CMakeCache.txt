@@ -218,6 +218,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=C:/msys64/mingw64/lib/cmake/SDL2
 
+//The directory containing a CMake configuration file for SDL2_image.
+SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
+
 //Value Computed by CMake
 SDL_BINARY_DIR:STATIC=D:/C/SDL/build
 

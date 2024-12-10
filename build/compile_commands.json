@@ -4,5 +4,17 @@
   "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\main.dir\\src\\main.c.obj -c D:\\C\\SDL\\src\\main.c",
   "file": "D:/C/SDL/src/main.c",
   "output": "CMakeFiles/main.dir/src/main.c.obj"
+},
+{
+  "directory": "D:/C/SDL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\main.dir\\src\\engine.c.obj -c D:\\C\\SDL\\src\\engine.c",
+  "file": "D:/C/SDL/src/engine.c",
+  "output": "CMakeFiles/main.dir/src/engine.c.obj"
+},
+{
+  "directory": "D:/C/SDL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\main.dir\\src\\ecs.c.obj -c D:\\C\\SDL\\src\\ecs.c",
+  "file": "D:/C/SDL/src/ecs.c",
+  "output": "CMakeFiles/main.dir/src/ecs.c.obj"
 }
 ]

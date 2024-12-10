@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/ecs.c.obj"
+  "CMakeFiles/main.dir/src/ecs.c.obj.d"
+  "CMakeFiles/main.dir/src/engine.c.obj"
+  "CMakeFiles/main.dir/src/engine.c.obj.d"
   "CMakeFiles/main.dir/src/main.c.obj"
   "CMakeFiles/main.dir/src/main.c.obj.d"
   "libmain.dll.a"

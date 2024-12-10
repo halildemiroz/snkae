@@ -128,6 +128,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/ecs.obj: src/ecs.c.obj
+.PHONY : src/ecs.obj
+
+# target to build an object file
+src/ecs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/ecs.c.obj
+.PHONY : src/ecs.c.obj
+
+src/ecs.i: src/ecs.c.i
+.PHONY : src/ecs.i
+
+# target to preprocess a source file
+src/ecs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/ecs.c.i
+.PHONY : src/ecs.c.i
+
+src/ecs.s: src/ecs.c.s
+.PHONY : src/ecs.s
+
+# target to generate assembly for a file
+src/ecs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/ecs.c.s
+.PHONY : src/ecs.c.s
+
+src/engine.obj: src/engine.c.obj
+.PHONY : src/engine.obj
+
+# target to build an object file
+src/engine.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.obj
+.PHONY : src/engine.c.obj
+
+src/engine.i: src/engine.c.i
+.PHONY : src/engine.i
+
+# target to preprocess a source file
+src/engine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.i
+.PHONY : src/engine.c.i
+
+src/engine.s: src/engine.c.s
+.PHONY : src/engine.s
+
+# target to generate assembly for a file
+src/engine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.s
+.PHONY : src/engine.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -161,6 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
+	@echo ... src/ecs.obj
+	@echo ... src/ecs.i
+	@echo ... src/ecs.s
+	@echo ... src/engine.obj
+	@echo ... src/engine.i
+	@echo ... src/engine.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

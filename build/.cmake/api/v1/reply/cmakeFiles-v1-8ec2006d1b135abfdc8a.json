@@ -154,6 +154,19 @@
 		{
 			"isExternal" : true,
 			"path" : "C:/msys64/mingw64/lib/cmake/SDL2/sdlfind.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/SDL2_image/cmake/sdl2_image-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/SDL2_image/cmake/sdl2_image-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/FeatureSummary.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

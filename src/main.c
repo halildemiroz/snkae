@@ -1,19 +1,33 @@
 #define SDL_MAIN_HANDLED
-#include <SDL.h>
-#include <stdio.h>
+#include "../include/engine.h"
+
+#define FPS 60
+#define FRAME_DELAY (1000/FPS)
 
 int main(int argc, char* argv[]) {
 	
-	SDL_Init(SDL_INIT_EVERYTHING);
+	engine_Init("Game", 800, 600);
 
-	SDL_Window* window = SDL_CreateWindow("SDL", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
-	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+	unsigned int frameStart, frameTime;
 
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-	SDL_RenderClear(renderer);
-	SDL_RenderPresent(renderer);
+	while(engine.isRunning) {
 
-	SDL_Delay(3000);
+		frameStart = SDL_GetTicks();
+
+		engine_HandleEvent();
+		engine_Update();
+		engine_Render(61, 81, 191, 100);
+
+
+		frameTime = SDL_GetTicks() - frameStart;
+
+		if(frameTime < FRAME_DELAY){
+			SDL_Delay(FRAME_DELAY- frameTime);
+		}
+	
+	}
+
+	engine_Clean();
 
 	return 0;
 }

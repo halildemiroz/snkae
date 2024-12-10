@@ -26,6 +26,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
+  "C:/SDL2_image/cmake/sdl2_image-config-version.cmake"
+  "C:/SDL2_image/cmake/sdl2_image-config.cmake"
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2Config.cmake"
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2ConfigVersion.cmake"
   "C:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets-release.cmake"
