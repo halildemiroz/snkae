@@ -3,6 +3,7 @@
 
 #include <SDL_image.h>
 #include <SDL.h>
+#include "../include/engine.h"
 
 typedef struct {
     SDL_Texture* texture;
@@ -14,8 +15,9 @@ typedef struct {
 
 } Ecs;
 
-void ecs_Texture();
-void ecs_Init();
+void ecs_Texture(const char* texturePath);
+void ecs_Init(int totalFrames);
+void ecs_Render();
 
 
 extern Ecs ecs;

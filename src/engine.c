@@ -24,9 +24,8 @@ int engine_Init(const char* title, int width, int height) {
 
     engine.isRunning = true;
 
-    ecs_Init();
-    SDL_Surface* surface = IMG_Load("../assets/IDLE.png");
-    ecs.texture = SDL_CreateTextureFromSurface(engine.renderer, surface);
+    ecs_Init(10);
+    ecs_Texture("../assets/IDLE.png");
 
 }
 
@@ -49,6 +48,16 @@ void engine_HandleEvent() {
                 case SDLK_ESCAPE:
                     engine.isRunning = 0;
                     break;
+                case SDLK_w:
+                    ecs_Init(7);
+                    ecs_Texture("../assets/ATTACk.png");
+                    printf("w");
+                    break;
+                case SDLK_s:
+                    ecs_Init(10);
+                    ecs_Texture("../assets/IDLE.png");
+                    printf("s");
+                    break;
                 default:
                     break;
             }
@@ -60,6 +69,7 @@ void engine_HandleEvent() {
 void engine_Update() {
 
     Uint32 currentTime = SDL_GetTicks();
+    
     if(currentTime > ecs.lastFrameTime + ecs.animationSpeed){
         ecs.currentFrame = (ecs.currentFrame + 1) % ecs.totalFrames;
         ecs.srcRect.x = ecs.currentFrame * ecs.frameWidth;
@@ -73,7 +83,8 @@ void engine_Render(int r, int g, int b, int a) {
     SDL_SetRenderDrawColor(engine.renderer, r, g, b, a);
     SDL_RenderClear(engine.renderer);
 
-    SDL_RenderCopy(engine.renderer, ecs.texture, &ecs.srcRect, &ecs.destRect);
+    ecs_Render();
+
     SDL_RenderPresent(engine.renderer);
 
 }

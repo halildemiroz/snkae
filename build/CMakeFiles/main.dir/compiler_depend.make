@@ -181,6 +181,7 @@ CMakeFiles/main.dir/src/ecs.c.obj: D:/C/SDL/src/ecs.c \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
@@ -203,7 +204,8 @@ CMakeFiles/main.dir/src/ecs.c.obj: D:/C/SDL/src/ecs.c \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveoptintrin.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h \
-  D:/C/SDL/include/ecs.h
+  D:/C/SDL/include/ecs.h \
+  D:/C/SDL/include/engine.h
 
 CMakeFiles/main.dir/src/engine.c.obj: D:/C/SDL/src/engine.c \
   C:/SDL2_image/include/SDL_image.h \
@@ -995,6 +997,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
@@ -1028,5 +1032,3 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
 
 D:/C/SDL/src/engine.c:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h:

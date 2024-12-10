@@ -2,7 +2,7 @@
 
 Ecs ecs;
 
-void ecs_Init() {
+void ecs_Init(int totalFrames) {
 
     ecs.destRect.x = 0;
     ecs.destRect.y = 0;
@@ -17,8 +17,21 @@ void ecs_Init() {
     ecs.frameWidth = 96;
     ecs.frameHeight = 96;
     ecs.currentFrame = 0;
-    ecs.totalFrames = 10;
+    ecs.totalFrames = totalFrames;
     ecs.animationSpeed = 100;
     ecs.lastFrameTime = 0;
+
+}
+
+void ecs_Texture(const char* texturePath){
+    
+    SDL_Surface* surface = IMG_Load(texturePath);
+    ecs.texture = SDL_CreateTextureFromSurface(engine.renderer, surface);
+
+}
+
+void ecs_Render() {
+
+    SDL_RenderCopy(engine.renderer, ecs.texture, &ecs.srcRect, &ecs.destRect);
 
 }
