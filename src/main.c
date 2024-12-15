@@ -1,5 +1,6 @@
 #define SDL_MAIN_HANDLED
 #include "../include/engine.h"
+#include <stdio.h>
 
 #define FPS 60
 #define FRAME_DELAY (1000/FPS)
@@ -16,7 +17,7 @@ int main(int argc, char* argv[]) {
 
 		engine_HandleEvent();
 		engine_Update();
-		engine_Render(61, 81, 191, 100);
+		engine_Render();
 
 
 		frameTime = SDL_GetTicks() - frameStart;

@@ -15,7 +15,7 @@ typedef struct {
 
 int engine_Init(const char* title, int width, int height);
 void engine_Update();
-void engine_Render(int r, int g, int b, int a);
+void engine_Render();
 void engine_Clean();
 void engine_HandleEvent();
 
