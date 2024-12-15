@@ -1,5 +1,5 @@
 #define SDL_MAIN_HANDLED
-#include "../include/engine.h"
+#include "../include/game.h"
 #include <stdio.h>
 
 #define FPS 60
@@ -7,18 +7,17 @@
 
 int main(int argc, char* argv[]) {
 	
-	engine_Init("Game", 800, 600);
+	game_Init("Game", 800, 600);
 
 	unsigned int frameStart, frameTime;
 
-	while(engine.isRunning) {
+	while(game.isRunning) {
 
 		frameStart = SDL_GetTicks();
 
-		engine_HandleEvent();
-		engine_Update();
-		engine_Render();
-
+		game_Render(61,81,181);
+		game_HandleEvent();
+		game_Update();
 
 		frameTime = SDL_GetTicks() - frameStart;
 
@@ -28,7 +27,7 @@ int main(int argc, char* argv[]) {
 	
 	}
 
-	engine_Clean();
+	game_Clean();
 
 	return 0;
 }

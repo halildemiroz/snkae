@@ -24,4 +24,7 @@ link_directories(${SDL2_LIBRARY_DIR})
 
 link_libraries(SDL2main SDL2 SDL2_ttf SDL2_image)
 
-add_executable(main src/main.c src/engine.c)
+add_executable(main src/main.c
+src/game.c
+src/loader.c
+)

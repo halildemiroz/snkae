@@ -7,8 +7,14 @@
 },
 {
   "directory": "D:/C/SDL/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu2x -o CMakeFiles\\main.dir\\src\\engine.c.obj -c D:\\C\\SDL\\src\\engine.c",
-  "file": "D:/C/SDL/src/engine.c",
-  "output": "CMakeFiles/main.dir/src/engine.c.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu2x -o CMakeFiles\\main.dir\\src\\game.c.obj -c D:\\C\\SDL\\src\\game.c",
+  "file": "D:/C/SDL/src/game.c",
+  "output": "CMakeFiles/main.dir/src/game.c.obj"
+},
+{
+  "directory": "D:/C/SDL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu2x -o CMakeFiles\\main.dir\\src\\loader.c.obj -c D:\\C\\SDL\\src\\loader.c",
+  "file": "D:/C/SDL/src/loader.c",
+  "output": "CMakeFiles/main.dir/src/loader.c.obj"
 }
 ]

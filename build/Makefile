@@ -128,29 +128,53 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/engine.obj: src/engine.c.obj
-.PHONY : src/engine.obj
+src/game.obj: src/game.c.obj
+.PHONY : src/game.obj
 
 # target to build an object file
-src/engine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.obj
-.PHONY : src/engine.c.obj
+src/game.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.c.obj
+.PHONY : src/game.c.obj
 
-src/engine.i: src/engine.c.i
-.PHONY : src/engine.i
+src/game.i: src/game.c.i
+.PHONY : src/game.i
 
 # target to preprocess a source file
-src/engine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.i
-.PHONY : src/engine.c.i
+src/game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.c.i
+.PHONY : src/game.c.i
 
-src/engine.s: src/engine.c.s
-.PHONY : src/engine.s
+src/game.s: src/game.c.s
+.PHONY : src/game.s
 
 # target to generate assembly for a file
-src/engine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/engine.c.s
-.PHONY : src/engine.c.s
+src/game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.c.s
+.PHONY : src/game.c.s
+
+src/loader.obj: src/loader.c.obj
+.PHONY : src/loader.obj
+
+# target to build an object file
+src/loader.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/loader.c.obj
+.PHONY : src/loader.c.obj
+
+src/loader.i: src/loader.c.i
+.PHONY : src/loader.i
+
+# target to preprocess a source file
+src/loader.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/loader.c.i
+.PHONY : src/loader.c.i
+
+src/loader.s: src/loader.c.s
+.PHONY : src/loader.s
+
+# target to generate assembly for a file
+src/loader.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/loader.c.s
+.PHONY : src/loader.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -185,9 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... src/engine.obj
-	@echo ... src/engine.i
-	@echo ... src/engine.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/loader.obj
+	@echo ... src/loader.i
+	@echo ... src/loader.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

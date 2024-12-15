@@ -1,9 +1,10 @@
-#ifndef ENGINE_H
-#define ENGINE_H
+#ifndef GAME_H
+#define GAME_H
 
 #include <SDL.h>
 #include <SDL_image.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef struct {
 
@@ -11,16 +12,17 @@ typedef struct {
     SDL_Renderer* renderer;
     int isRunning;
 
-} Engine;
+} Game;
 
-int engine_Init(const char* title, int width, int height);
-void engine_Update();
-void engine_Render();
-void engine_Clean();
-void engine_HandleEvent();
+int game_Init(const char* title, int width, int height);
+void game_Update();
+void game_Render(int r, int g, int b);
+void game_Clean();
+void game_HandleEvent();
+void collision();
 
 // extern keyword'ü sadece var olduğunu belirtiyo hafızaya tanımlamıyo
 // bu durumda engine oluşturulmadı ama bilgisayara var olduğu söylendi ve tekrardan tanımlanmadan kullanıma hazır
-extern Engine engine;
+extern Game game;
 
 #endif
