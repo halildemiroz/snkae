@@ -1,1 +1,2 @@
-# SDL
+# snkae
+Very basic snake game clone
