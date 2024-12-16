@@ -1,5 +1,4 @@
 #include "../include/game.h"
-#include "../include/loader.h"
 
 Game game;
 
@@ -12,6 +11,14 @@ enum Direction{
     RIGHT
 
 } dir;
+
+enum Menus {
+
+    MAIN = 0,
+    GAME,
+    LOSE,
+
+} gameMenus;
 
 int game_Init(const char* title, int width, int height) {
 
@@ -59,9 +66,6 @@ void collision_Walls(int windowWidth, int windowHeight) {
         dir = NO;
         }
 
-        else
-            game.isRunning = 0;
-    
     }
 
     if (character.destRect.x + character.destRect.w > windowWidth) {
@@ -82,10 +86,6 @@ void collision_Walls(int windowWidth, int windowHeight) {
         apple.destRect.y = rand() % (600 - apple.destRect.h);
         dir = NO;
         }
-
-        else
-            game.isRunning = 0;
-
     }
 
     if (character.destRect.y < 0) {
@@ -107,9 +107,6 @@ void collision_Walls(int windowWidth, int windowHeight) {
         dir = NO;
         }
 
-        else
-            game.isRunning = 0;
-
     }
     if (character.destRect.y + character.destRect.h > windowHeight) {
 
@@ -129,9 +126,6 @@ void collision_Walls(int windowWidth, int windowHeight) {
         apple.destRect.y = rand() % (600 - apple.destRect.h);
         dir = NO;
         }
-
-        else
-            game.isRunning = 0;
 
     }
 }
@@ -163,14 +157,42 @@ void game_Render(int r, int g, int b) {
     SDL_SetRenderDrawColor(game.renderer, r, g, b, 255);
     SDL_RenderClear(game.renderer);
 
-    SDL_SetRenderDrawColor(game.renderer, 255, 0, 0, 255);
-    SDL_RenderFillRect(game.renderer, &apple.destRect);
+    if(game.xpos >= 200 && game.xpos <= 600 && game.ypos >= 150 && game.ypos <= 350) {
+        gameMenus = GAME;
+    }
+    if(character.health == 0) {
+        gameMenus = LOSE;
+    }
 
-    SDL_SetRenderDrawColor(game.renderer, 0,0,255,255);
-    SDL_RenderFillRect(game.renderer, &character.destRect);
+    // 650-700 400-450
 
-    collision_Apple();
-    collision_Walls(800,600);
+    if(gameMenus == LOSE && game.xpos < 700 && game.xpos > 650 && game.ypos < 450 && game.ypos > 400) {
+        gameMenus = MAIN;
+        character.health = 5;
+        character.score = 0;
+        character.destRect.x = 0;
+        character.destRect.y = 0;
+        apple.destRect.x = rand() % 700;
+        apple.destRect.y = rand() % 500;
+        game.xpos = 0;
+        game.ypos = 0;
+        gameMenus = GAME;
+        dir = NO;
+    }
+
+    switch (gameMenus) {
+        case 0:
+            render_Main_Menu("../assets/font.ttf", game.renderer);
+            break;
+        case 1:
+            render_Game_Menu("../assets/font.ttf", game.renderer);
+            break;
+        case 2:
+            render_Lose_Menu("../assets/font.ttf", game.renderer);
+            break;
+
+    }
+
 
     SDL_RenderPresent(game.renderer);
 
@@ -208,18 +230,28 @@ void game_HandleEvent() {
 
     switch (event.type)
     {
+    case SDL_MOUSEBUTTONDOWN:
+        SDL_GetMouseState(&game.xpos, &game.ypos);
+        break;
     case SDL_KEYDOWN:
         switch (event.key.keysym.sym) {
-        
+
+        case SDLK_ESCAPE:
+            game.isRunning = 0;
+            break;
+
         case SDLK_w:
             dir = UP;
             break;
+
         case SDLK_s:
             dir = DOWN;
             break;
+
         case SDLK_a:
             dir = LEFT;
             break;
+
         case SDLK_d:
             dir = RIGHT;
             break;

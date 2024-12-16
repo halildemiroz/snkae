@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\C\SDL
+CMAKE_SOURCE_DIR = D:\C\snkae
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\C\SDL\build
+CMAKE_BINARY_DIR = D:\C\snkae\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,54 +70,70 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/includes_C.rsp
-CMakeFiles/main.dir/src/main.c.obj: D:/C/SDL/src/main.c
+CMakeFiles/main.dir/src/main.c.obj: D:/C/snkae/src/main.c
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\SDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.obj"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.obj -MF CMakeFiles\main.dir\src\main.c.obj.d -o CMakeFiles\main.dir\src\main.c.obj -c D:\C\SDL\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\snkae\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.obj"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.obj -MF CMakeFiles\main.dir\src\main.c.obj.d -o CMakeFiles\main.dir\src\main.c.obj -c D:\C\snkae\src\main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\SDL\src\main.c > CMakeFiles\main.dir\src\main.c.i
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\snkae\src\main.c > CMakeFiles\main.dir\src\main.c.i
 
 CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\SDL\src\main.c -o CMakeFiles\main.dir\src\main.c.s
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\snkae\src\main.c -o CMakeFiles\main.dir\src\main.c.s
 
 CMakeFiles/main.dir/src/game.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/game.c.obj: CMakeFiles/main.dir/includes_C.rsp
-CMakeFiles/main.dir/src/game.c.obj: D:/C/SDL/src/game.c
+CMakeFiles/main.dir/src/game.c.obj: D:/C/snkae/src/game.c
 CMakeFiles/main.dir/src/game.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\SDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/game.c.obj"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/game.c.obj -MF CMakeFiles\main.dir\src\game.c.obj.d -o CMakeFiles\main.dir\src\game.c.obj -c D:\C\SDL\src\game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\snkae\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/game.c.obj"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/game.c.obj -MF CMakeFiles\main.dir\src\game.c.obj.d -o CMakeFiles\main.dir\src\game.c.obj -c D:\C\snkae\src\game.c
 
 CMakeFiles/main.dir/src/game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/game.c.i"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\SDL\src\game.c > CMakeFiles\main.dir\src\game.c.i
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\snkae\src\game.c > CMakeFiles\main.dir\src\game.c.i
 
 CMakeFiles/main.dir/src/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/game.c.s"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\SDL\src\game.c -o CMakeFiles\main.dir\src\game.c.s
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\snkae\src\game.c -o CMakeFiles\main.dir\src\game.c.s
 
 CMakeFiles/main.dir/src/loader.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/loader.c.obj: CMakeFiles/main.dir/includes_C.rsp
-CMakeFiles/main.dir/src/loader.c.obj: D:/C/SDL/src/loader.c
+CMakeFiles/main.dir/src/loader.c.obj: D:/C/snkae/src/loader.c
 CMakeFiles/main.dir/src/loader.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\SDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/loader.c.obj"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/loader.c.obj -MF CMakeFiles\main.dir\src\loader.c.obj.d -o CMakeFiles\main.dir\src\loader.c.obj -c D:\C\SDL\src\loader.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\snkae\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/loader.c.obj"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/loader.c.obj -MF CMakeFiles\main.dir\src\loader.c.obj.d -o CMakeFiles\main.dir\src\loader.c.obj -c D:\C\snkae\src\loader.c
 
 CMakeFiles/main.dir/src/loader.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/loader.c.i"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\SDL\src\loader.c > CMakeFiles\main.dir\src\loader.c.i
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\snkae\src\loader.c > CMakeFiles\main.dir\src\loader.c.i
 
 CMakeFiles/main.dir/src/loader.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/loader.c.s"
-	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\SDL\src\loader.c -o CMakeFiles\main.dir\src\loader.c.s
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\snkae\src\loader.c -o CMakeFiles\main.dir\src\loader.c.s
+
+CMakeFiles/main.dir/src/menu.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/menu.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/menu.c.obj: D:/C/snkae/src/menu.c
+CMakeFiles/main.dir/src/menu.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C\snkae\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/menu.c.obj"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/menu.c.obj -MF CMakeFiles\main.dir\src\menu.c.obj.d -o CMakeFiles\main.dir\src\menu.c.obj -c D:\C\snkae\src\menu.c
+
+CMakeFiles/main.dir/src/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/menu.c.i"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\C\snkae\src\menu.c > CMakeFiles\main.dir\src\menu.c.i
+
+CMakeFiles/main.dir/src/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/menu.c.s"
+	C:\msys64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\C\snkae\src\menu.c -o CMakeFiles\main.dir\src\menu.c.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.c.obj" \
 "CMakeFiles/main.dir/src/game.c.obj" \
-"CMakeFiles/main.dir/src/loader.c.obj"
+"CMakeFiles/main.dir/src/loader.c.obj" \
+"CMakeFiles/main.dir/src/menu.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -125,11 +141,12 @@ main_EXTERNAL_OBJECTS =
 main.exe: CMakeFiles/main.dir/src/main.c.obj
 main.exe: CMakeFiles/main.dir/src/game.c.obj
 main.exe: CMakeFiles/main.dir/src/loader.c.obj
+main.exe: CMakeFiles/main.dir/src/menu.c.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp
 main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\C\SDL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\C\snkae\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +158,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\C\SDL D:\C\SDL D:\C\SDL\build D:\C\SDL\build D:\C\SDL\build\CMakeFiles\main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\C\snkae D:\C\snkae D:\C\snkae\build D:\C\snkae\build D:\C\snkae\build\CMakeFiles\main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/main.dir/depend
 

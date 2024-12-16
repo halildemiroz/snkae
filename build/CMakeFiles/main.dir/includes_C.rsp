@@ -1,1 +1,1 @@
--IC:/SDL2_image/include -IC:/msys64/mingw64/include/SDL2
+-IC:/SDL2_image/include -IC:/msys64/mingw64/include/SDL2 -IC:/SDL2_ttf/include -IC:/SDL2_ttf/lib/x64
