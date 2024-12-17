@@ -1,3 +1,0 @@
-D:/C/snkae/build/CMakeFiles/main.dir
-D:/C/snkae/build/CMakeFiles/edit_cache.dir
-D:/C/snkae/build/CMakeFiles/rebuild_cache.dir
