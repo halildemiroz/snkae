@@ -2,16 +2,6 @@
 
 Game game;
 
-enum Direction{
-    
-    NO = 0,
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT
-
-} dir;
-
 enum Menus {
 
     MAIN = 0,
@@ -63,7 +53,7 @@ void collision_Walls(int windowWidth, int windowHeight) {
 
         apple.destRect.x = rand() % (800 - apple.destRect.w);
         apple.destRect.y = rand() % (600 - apple.destRect.h);
-        dir = NO;
+        character.dir = 0;
         }
 
     }
@@ -84,7 +74,7 @@ void collision_Walls(int windowWidth, int windowHeight) {
 
         apple.destRect.x = rand() % (800 - apple.destRect.w);
         apple.destRect.y = rand() % (600 - apple.destRect.h);
-        dir = NO;
+        character.dir = 0;
         }
     }
 
@@ -104,7 +94,7 @@ void collision_Walls(int windowWidth, int windowHeight) {
 
         apple.destRect.x = rand() % (800 - apple.destRect.w);
         apple.destRect.y = rand() % (600 - apple.destRect.h);
-        dir = NO;
+        character.dir = 0;
         }
 
     }
@@ -124,7 +114,7 @@ void collision_Walls(int windowWidth, int windowHeight) {
 
         apple.destRect.x = rand() % (800 - apple.destRect.w);
         apple.destRect.y = rand() % (600 - apple.destRect.h);
-        dir = NO;
+        character.dir = 0;
         }
 
     }
@@ -177,7 +167,7 @@ void game_Render(int r, int g, int b) {
         game.xpos = 0;
         game.ypos = 0;
         gameMenus = GAME;
-        dir = NO;
+        character.dir = 0;
     }
 
     switch (gameMenus) {
@@ -200,16 +190,16 @@ void game_Render(int r, int g, int b) {
 
 void game_Update() {
 
-    if(dir == UP) {
+    if(character.dir == 1) {
         character.destRect.y-=character.speed/2.5;
     }
-    else if(dir == DOWN) {
+    else if(character.dir == 2) {
         character.destRect.y+=character.speed/2.5;
     }
-    else if(dir == LEFT) {
+    else if(character.dir == 3) {
         character.destRect.x-=character.speed/2.5;
     }
-    else if(dir == RIGHT) {
+    else if(character.dir == 4) {
         character.destRect.x+=character.speed/2.5;
     }
 
@@ -241,19 +231,19 @@ void game_HandleEvent() {
             break;
 
         case SDLK_w:
-            dir = UP;
+            character.dir = 1;
             break;
 
         case SDLK_s:
-            dir = DOWN;
+            character.dir = 2;
             break;
 
         case SDLK_a:
-            dir = LEFT;
+            character.dir = 3;
             break;
 
         case SDLK_d:
-            dir = RIGHT;
+            character.dir = 4;
             break;
 
         }

@@ -1,4 +1,5 @@
 #include "../include/menu.h"
+#include "../include/game.h"
 
 Menu menu;
 
@@ -86,17 +87,64 @@ void render_Game_Menu(const char* font_Path, SDL_Renderer* renderer) {
     SDL_RenderCopy(renderer, score, NULL, &menu.score_Rect);
 
     // Snake and Apple rendering
-
+/*
+    // Apple
     SDL_SetRenderDrawColor(game.renderer, 255, 0, 0, 255);
     SDL_RenderFillRect(game.renderer, &apple.destRect);
+*/
+    SDL_Surface* surfaceApple = IMG_Load("../assets/apple.png");
+    SDL_Texture* textureApple = SDL_CreateTextureFromSurface(game.renderer, surfaceApple);
+    SDL_RenderCopy(game.renderer, textureApple, NULL, &apple.destRect);
 
+    // Snake
+/*    
     SDL_SetRenderDrawColor(game.renderer, 0,0,255,255);
     SDL_RenderFillRect(game.renderer, &character.destRect);
+*/  
+
+    if(character.dir == 1){
+        SDL_Surface* surfaceSnake = IMG_Load("../assets/su.png");
+        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
+        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
+        SDL_DestroyTexture(textureSnake);
+        SDL_FreeSurface(surfaceSnake);
+    }
+    else if(character.dir == 2){
+        SDL_Surface* surfaceSnake = IMG_Load("../assets/sd.png");
+        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
+        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
+        SDL_DestroyTexture(textureSnake);
+        SDL_FreeSurface(surfaceSnake);
+    }
+    else if(character.dir == 3){
+        SDL_Surface* surfaceSnake = IMG_Load("../assets/sl.png");
+        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
+        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
+        SDL_DestroyTexture(textureSnake);
+        SDL_FreeSurface(surfaceSnake);
+    }
+    else if(character.dir == 4){
+        SDL_Surface* surfaceSnake = IMG_Load("../assets/sr.png");
+        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
+        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
+        SDL_DestroyTexture(textureSnake);
+        SDL_FreeSurface(surfaceSnake);
+    }
+    else if(character.dir == 0){
+        SDL_Surface* surfaceSnake = IMG_Load("../assets/sr.png");
+        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
+        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
+        SDL_DestroyTexture(textureSnake);
+        SDL_FreeSurface(surfaceSnake);
+    }
+
 
     collision_Apple();
     collision_Walls(800,600);
 
     SDL_FreeSurface(surfaceHealth);
+    SDL_FreeSurface(surfaceApple);
+    SDL_DestroyTexture(textureApple);
     SDL_FreeSurface(surfaceScore);
     SDL_DestroyTexture(health);
     SDL_DestroyTexture(score);
@@ -145,7 +193,9 @@ void render_Lose_Menu(const char* font_Path, SDL_Renderer* renderer) {
     SDL_RenderCopy(renderer, retryTexture, NULL, &menu.message2_Rect);
 
     SDL_FreeSurface(message);
+    SDL_FreeSurface(retry);
     SDL_DestroyTexture(texture);
+    SDL_DestroyTexture(retryTexture);
     TTF_CloseFont(font);
 
 }

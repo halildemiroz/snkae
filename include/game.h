@@ -10,6 +10,19 @@
 #include "menu.h"
 #include "entity.h"
 
+/*
+enum Direction{
+    
+    NO = 0,
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT
+
+} dir;
+*/
+
+
 typedef struct {
 
     SDL_Window* window;
