@@ -3,7 +3,6 @@
 
 
 ### Dependencies
-1. **SDL2**
 2. **CMake**
 3. **GNU Make**
 4. **Mingw or MSYS2**
