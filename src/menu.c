@@ -102,35 +102,28 @@ void render_Game_Menu(const char* font_Path, SDL_Renderer* renderer) {
     SDL_RenderFillRect(game.renderer, &character.destRect);
 */  
 
-    if(character.dir == 1){
+    if(character.dir == UP){
         SDL_Surface* surfaceSnake = IMG_Load("../assets/su.png");
         SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
         SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
         SDL_DestroyTexture(textureSnake);
         SDL_FreeSurface(surfaceSnake);
     }
-    else if(character.dir == 2){
+    else if(character.dir == DOWN){
         SDL_Surface* surfaceSnake = IMG_Load("../assets/sd.png");
         SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
         SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
         SDL_DestroyTexture(textureSnake);
         SDL_FreeSurface(surfaceSnake);
     }
-    else if(character.dir == 3){
+    else if(character.dir == LEFT){
         SDL_Surface* surfaceSnake = IMG_Load("../assets/sl.png");
         SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
         SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
         SDL_DestroyTexture(textureSnake);
         SDL_FreeSurface(surfaceSnake);
     }
-    else if(character.dir == 4){
-        SDL_Surface* surfaceSnake = IMG_Load("../assets/sr.png");
-        SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
-        SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
-        SDL_DestroyTexture(textureSnake);
-        SDL_FreeSurface(surfaceSnake);
-    }
-    else if(character.dir == 0){
+    else if(character.dir == RIGHT || character.dir == NO){
         SDL_Surface* surfaceSnake = IMG_Load("../assets/sr.png");
         SDL_Texture* textureSnake = SDL_CreateTextureFromSurface(game.renderer, surfaceSnake);
         SDL_RenderCopy(game.renderer, textureSnake, NULL, &character.destRect);
