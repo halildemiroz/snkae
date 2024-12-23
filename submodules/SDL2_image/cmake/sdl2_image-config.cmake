@@ -7,11 +7,7 @@ set_package_properties(SDL2_image PROPERTIES
     DESCRIPTION "SDL_image is an image file loading library"
 )
 
-<<<<<<< HEAD
 cmake_minimum_required(VERSION 3.5)
-=======
-cmake_minimum_required(VERSION 3.0)
->>>>>>> 6fed42e4beacf9061549d5cd5f9b9f8eab09eeec
 
 set(SDL2_image_FOUND TRUE)
 
