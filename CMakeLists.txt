@@ -3,18 +3,16 @@ project(snkae C)
 
 set(CMAKE_C_STANDARD 23)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
+set(SDL2_INCLUDE_DIR "submodules/SDL2/include")
+set(SDL2_LIBRARY_DIR "submodules/SDL2/lib")
 
-set(SDL2_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2/include")
-set(SDL2_LIBRARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2/lib")
+set(SDL2_image_INCLUDE_DIR "submodules/SDL2_image/include")
+set(SDL2_image_LIBRARY_DIR "submodules/SDL2_image/lib")
+set(SDL2_image_DIR "submodules/SDL2_image/cmake")
 
-set(SDL2_image_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_image/include")
-set(SDL2_image_LIBRARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_image/lib")
-set(SDL2_image_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_image/cmake")
-
-set(SDL2_ttf_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_ttf/include")
-set(SDL2_ttf_LIBRARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_ttf/lib/x64")
-set(SDL2_ttf_DIR "${CMAKE_CURRENT_SOURCE_DIR}/submodules/SDL2_ttf/cmake")
+set(SDL2_ttf_INCLUDE_DIR "submodules/SDL2_ttf/include")
+set(SDL2_ttf_LIBRARY_DIR "submodules/SDL2_ttf/lib/x64")
+set(SDL2_ttf_DIR "submodules/SDL2_ttf/cmake")
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
