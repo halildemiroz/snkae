@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
 	
-	game_Init("Snkae", 800, 600);
+	game_Init("HELUAFEHJI", 800, 600);
 
 	unsigned int frameStart, frameTime;
 
