@@ -29,10 +29,10 @@ int game_Init(const char* title, int width, int height) {
         return 0;
     }
 
-    loader_Init(48,48);
+    loader_Init(24,24);
 
     game.isRunning = 1;
-
+    return 1;
 }
 
 void collision_Walls(int windowWidth, int windowHeight) {
@@ -46,8 +46,8 @@ void collision_Walls(int windowWidth, int windowHeight) {
         
         if(character.health > 0) {
         
-        character.destRect.x = 0;
-        character.destRect.y = 0;
+        character.destRect.x = windowWidth / 2;
+        character.destRect.y = windowHeight / 2;
 
         printf("Health: %d\n", character.health);
 

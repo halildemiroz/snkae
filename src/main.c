@@ -1,13 +1,13 @@
+#include <stdatomic.h>
 #define SDL_MAIN_HANDLED
 #include "../include/game.h"
 #include <stdio.h>
-
 #define FPS 60
 #define FRAME_DELAY (1000/FPS)
 
 int main(int argc, char* argv[]) {
-	
-	game_Init("HELUAFEHJI", 800, 600);
+
+	game_Init("Snkae", 800, 600);
 
 	unsigned int frameStart, frameTime;
 
@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
 		frameStart = SDL_GetTicks();
 
-		game_Render(61,81,181);
+		game_Render(0,0,0);
 		game_HandleEvent();
 		game_Update();
 

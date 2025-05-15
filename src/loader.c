@@ -20,8 +20,8 @@ void loader_Init(int w, int h) {
 
     /* ---------------------- */
 
-    apple.destRect.w = 48;
-    apple.destRect.h = 48;
+    apple.destRect.w = w;
+    apple.destRect.h = h;
     apple.destRect.x = rand() % 700;
     apple.destRect.y = rand() % 500;
     
