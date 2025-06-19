@@ -1,6 +1,5 @@
 #include "../include/menu.h"
 #include "../include/game.h"
-#include "SDL2/SDL_render.h"
 
 Menu menu;
 

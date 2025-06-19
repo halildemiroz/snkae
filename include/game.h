@@ -1,8 +1,7 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once 
 
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include <SDL.h>
+#include <SDL_image.h>
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -46,5 +45,3 @@ void get_Click_Pos();
 // extern keyword'ü sadece var olduğunu belirtiyo hafızaya tanımlamıyo
 // bu durumda engine oluşturulmadı ama bilgisayara var olduğu söylendi ve tekrardan tanımlanmadan kullanıma hazır
 extern Game game;
-
-#endif
